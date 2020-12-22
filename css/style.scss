@@ -1,7 +1,8 @@
 //            Links
 
 //           Variables
-$pink: lightpink;
+$primary-color: turquoise;
+$secondary-color: blue;
 
 //         Configuration
 * {
@@ -13,14 +14,15 @@ $pink: lightpink;
 
 //--------------Body----------------------------
 body {
-	background-image: url(../img/BATB-logo.jpg);
+	background-image: url(../img/wood-logo-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	background-size: cover;
 
 	a {
 		text-decoration: none;
-		color: rgb(255, 0, 149);
+		color: $secondary-color;
 
 		&:hover {
 			color: rgb(114, 0, 0);
@@ -58,7 +60,7 @@ body {
 	}
 	//          Navigation
 	.navbar {
-		background-color: $pink;
+		background-color: $primary-color;
 		display: flex;
 		justify-content: center;
 
@@ -73,7 +75,7 @@ body {
 	//            Footer
 	.footer-container {
 		height: fit-content;
-		background-color: $pink;
+		background-color: $primary-color;
 		text-align: center;
 		padding: 0.5rem;
 
