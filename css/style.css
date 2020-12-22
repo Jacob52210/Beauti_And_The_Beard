@@ -9,6 +9,7 @@ body {
   background-image: url(../img/BATB-logo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 body .header {
@@ -31,7 +32,7 @@ body .navbar-nav {
 }
 
 body .page-content-container {
-  height: 100vh;
+  height: 110vh;
 }
 
 body .footer-container {
