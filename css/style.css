@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +12,17 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 body a {
   text-decoration: none;
-  color: blue;
+  color: gray;
 }
 
 body a:hover {
-  color: #720000;
+  color: darkblue;
+  text-decoration: none;
 }
 
 body .header {
@@ -35,6 +38,33 @@ body .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+body .header h1 {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 18vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
+  height: inherit;
+  max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  color: black;
+  margin: 0px;
+  padding: 1rem;
 }
 
 body .header section#carousel > figure > img {
@@ -64,26 +94,70 @@ body .navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px #272727;
+          box-shadow: 0px 5px 10px #272727;
 }
 
 body .navbar-nav {
   text-align: center;
+  font-weight: bolder;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar-nav .nav-item .nav-link {
+  color: gray;
+}
+
+body .navbar-nav .nav-item .nav-link:hover {
+  color: darkblue;
+}
+
+body .navbar .dropdown-menu {
+  background-color: lightgray;
+  text-align: center;
+  width: 80vw;
+  max-width: 250px;
 }
 
 body .page-content-container {
-  height: 100vh;
+  height: 90vh;
 }
 
 body .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: turquoise;
   text-align: center;
   padding: 0.5rem;
+  -webkit-box-shadow: -5px -5px 20px;
+          box-shadow: -5px -5px 20px;
 }
 
 body .footer-container .social-icon-container {
+  width: 80vw;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
