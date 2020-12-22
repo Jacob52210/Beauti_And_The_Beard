@@ -1,0 +1,42 @@
+//            Links
+
+//           Variables
+$pink: lightpink;
+//         Configuration
+* {
+	margin: none;
+	padding: none;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	background-image: url(../img/BATB-logo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	//            Header
+	.header {
+		height: 200px;
+		background-color: lightblue;
+	}
+	//          Navigation
+	.navbar {
+		background-color: $pink;
+		display: flex;
+		justify-content: center;
+
+		&-nav {
+			text-align: center;
+		}
+	}
+	//           Content
+	.page-content-container {
+		height: 100vh;
+	}
+	//            Footer
+	.footer-container {
+		height: 50px;
+		background-color: $pink;
+	}
+	//         Media Queries
+}

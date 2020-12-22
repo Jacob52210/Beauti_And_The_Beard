@@ -1,0 +1,41 @@
+* {
+  margin: none;
+  padding: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-image: url(../img/BATB-logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body .header {
+  height: 200px;
+  background-color: lightblue;
+}
+
+body .navbar {
+  background-color: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .navbar-nav {
+  text-align: center;
+}
+
+body .page-content-container {
+  height: 100vh;
+}
+
+body .footer-container {
+  height: 50px;
+  background-color: lightpink;
+}
+/*# sourceMappingURL=style.css.map */
