@@ -35,7 +35,7 @@ body {
 	//            Header
 	.header {
 		height: 60vw;
-		max-height: 300px;
+		max-height: 200px;
 		overflow: hidden;
 		display: flex;
 		justify-content: center;
@@ -44,14 +44,14 @@ body {
 
 		h1 {
 			font-family: 'Mr Dafoe', cursive;
-			font-size: 18vw;
+			font-size: 20vw;
 			background-color: rgba(255, 255, 255, 0.5);
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100vw;
 			height: inherit;
-			max-height: 300px;
+			max-height: 200px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -98,6 +98,7 @@ body {
 			.nav-item {
 				.nav-link {
 					color: gray;
+					margin-left: 1rem;
 
 					&:hover {
 						color: $hover-over;
@@ -129,7 +130,7 @@ body {
 		text-align: center;
 		padding: 0.5rem;
 		box-shadow: -5px -5px 20px;
-		padding-bottom: 7rem;
+		padding-bottom: 6rem;
 
 		.phone-icon {
 			position: fixed;
@@ -151,7 +152,7 @@ body {
 			bottom: 1rem;
 			background-color: white;
 			padding: 1rem;
-			border-radius: 50%;
+			border-radius: 46%;
 			border: 3px solid $secondary-color;
 
 			&:hover {
@@ -171,11 +172,14 @@ body {
 		}
 	}
 	//         Media Queries
-	@media screen and (min-width: 576px) {
+	@media screen and (min-width: 426px) {
 		.header {
 			h1 {
 				font-size: 10vw;
 			}
 		}
+	}
+
+	@media screen and (min-width: 698px) {
 	}
 }

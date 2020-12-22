@@ -27,7 +27,7 @@ body a:hover {
 
 body .header {
   height: 60vw;
-  max-height: 300px;
+  max-height: 200px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +43,7 @@ body .header {
 
 body .header h1 {
   font-family: 'Mr Dafoe', cursive;
-  font-size: 18vw;
+  font-size: 20vw;
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 50%;
@@ -51,7 +51,7 @@ body .header h1 {
           transform: translateX(-50%);
   width: 100vw;
   height: inherit;
-  max-height: 300px;
+  max-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +114,7 @@ body .navbar-nav {
 
 body .navbar-nav .nav-item .nav-link {
   color: gray;
+  margin-left: 1rem;
 }
 
 body .navbar-nav .nav-item .nav-link:hover {
@@ -153,7 +154,7 @@ body .footer-container {
   padding: 0.5rem;
   -webkit-box-shadow: -5px -5px 20px;
           box-shadow: -5px -5px 20px;
-  padding-bottom: 7rem;
+  padding-bottom: 6rem;
 }
 
 body .footer-container .phone-icon {
@@ -176,7 +177,7 @@ body .footer-container .arrow-icon {
   bottom: 1rem;
   background-color: white;
   padding: 1rem;
-  border-radius: 50%;
+  border-radius: 46%;
   border: 3px solid gray;
 }
 
@@ -199,7 +200,7 @@ body .footer-container p {
   margin: 0;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 426px) {
   body .header h1 {
     font-size: 10vw;
   }
