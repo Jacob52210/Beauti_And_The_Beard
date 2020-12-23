@@ -131,7 +131,19 @@ body .navbar .dropdown-menu {
 
 body .page-content-container {
   position: relative;
-  height: 110vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .page-content-container::before {
@@ -144,6 +156,46 @@ body .page-content-container::before {
   background-image: url(../img/wood.jpg);
   background-attachment: fixed;
   opacity: 0.7;
+}
+
+body .page-content-container .content-header-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-content-container .content-header-container .fa-user-circle {
+  padding-right: 1rem;
+  color: white;
+}
+
+body .page-content-container .content-header-container h1 {
+  position: relative;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+
+body .page-content-container .content-container {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 90vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+body .page-content-container .content-container p {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 body .page-content-container h1 {
