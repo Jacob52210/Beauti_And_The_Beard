@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -104,6 +105,7 @@ body .navbar {
 body .navbar-nav {
   text-align: center;
   font-weight: bolder;
+  font-family: 'Courgette', cursive;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -202,6 +204,7 @@ body .page-content-container .content-header-container h1 {
   text-align: center;
   color: white;
   font-family: 'Rouge Script', cursive;
+  margin-left: 1rem;
 }
 
 body .page-content-container .content-container {
@@ -213,6 +216,7 @@ body .page-content-container .content-container {
   max-width: 500px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
+  font-family: 'Courgette', cursive;
 }
 
 body .page-content-container .content-container p {
@@ -345,10 +349,10 @@ body .footer-container p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 60vw;
-    max-width: 300px;
+    max-width: 400px;
   }
   body .page-content-container .content-header-container h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 

@@ -1,5 +1,6 @@
 //            Links
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 //           Variables
 $primary-color: turquoise;
@@ -97,6 +98,7 @@ body {
 		&-nav {
 			text-align: center;
 			font-weight: bolder;
+			font-family: 'Courgette', cursive;
 			justify-content: center;
 			align-items: center;
 
@@ -175,6 +177,7 @@ body {
 				text-align: center;
 				color: white;
 				font-family: 'Rouge Script', cursive;
+				margin-left: 1rem;
 			}
 		}
 
@@ -187,6 +190,7 @@ body {
 			max-width: 500px;
 			background-color: rgba(white, 0.6);
 			border-radius: 10px;
+			font-family: 'Courgette', cursive;
 
 			p {
 				font-size: 1rem;
@@ -296,10 +300,10 @@ body {
 				flex-direction: row;
 				justify-content: space-evenly;
 				width: 60vw;
-				max-width: 300px;
+				max-width: 400px;
 
 				h1 {
-					font-size: 5rem;
+					font-size: 7rem;
 				}
 			}
 		}
