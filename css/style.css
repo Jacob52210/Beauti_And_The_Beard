@@ -131,9 +131,10 @@ body .navbar .dropdown-menu {
 
 body .page-content-container {
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: 110vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,12 +164,17 @@ body .page-content-container .content-header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2rem;
 }
 
 body .page-content-container .content-header-container .fa-user-circle {
@@ -176,11 +182,20 @@ body .page-content-container .content-header-container .fa-user-circle {
   color: white;
 }
 
+body .page-content-container .content-header-container img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
 body .page-content-container .content-header-container h1 {
   position: relative;
   font-size: 5rem;
+  font-weight: bold;
   text-align: center;
   color: white;
+  font-family: 'Rouge Script', cursive;
 }
 
 body .page-content-container .content-container {
@@ -194,7 +209,7 @@ body .page-content-container .content-container {
 }
 
 body .page-content-container .content-container p {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -283,6 +298,19 @@ body .footer-container p {
 @media screen and (min-width: 426px) {
   body .header h1 {
     font-size: 14vw;
+  }
+  body .page-content-container .content-header-container {
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .page-content-container .content-header-container h1 {
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
