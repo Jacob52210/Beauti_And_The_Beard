@@ -5,6 +5,9 @@
 $primary-color: turquoise;
 $secondary-color: gray;
 $hover-over: darkblue;
+$dropdown-link-bg: lightgray;
+$primary-text: black;
+$secondary-text: gray;
 
 //         Configuration
 * {
@@ -47,7 +50,7 @@ body {
 			font-family: 'Rouge Script', cursive;
 			font-weight: bold;
 			font-size: 23vw;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: rgba(white, 0.6);
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
@@ -58,7 +61,7 @@ body {
 			align-items: center;
 			justify-content: center;
 			z-index: 1;
-			color: black;
+			color: $primary-text;
 			margin: 0px;
 			padding: 1rem;
 		}
@@ -83,13 +86,14 @@ body {
 			padding: 0px;
 		}
 	}
+
 	//          Navigation
 	.navbar {
 		background-color: $primary-color;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		box-shadow: 0px 5px 10px rgb(39, 39, 39);
+		box-shadow: 0px 10px 15px $primary-text;
 
 		&-nav {
 			text-align: center;
@@ -99,7 +103,7 @@ body {
 
 			.nav-item {
 				.nav-link {
-					color: gray;
+					color: $secondary-color;
 					margin-left: 1rem;
 
 					&:hover {
@@ -110,7 +114,7 @@ body {
 		}
 
 		.dropdown-menu {
-			background-color: lightgray;
+			background-color: $dropdown-link-bg;
 			text-align: center;
 			width: 80vw;
 			max-width: 250px;
@@ -134,7 +138,7 @@ body {
 		background-color: $primary-color;
 		text-align: center;
 		padding: 0.5rem;
-		box-shadow: -5px -5px 20px;
+		box-shadow: 0px -10px 15px $primary-text;
 		padding-bottom: 6rem;
 
 		.phone-icon {
