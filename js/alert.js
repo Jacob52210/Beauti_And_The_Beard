@@ -1,1 +1,0 @@
-alert("Due to Covid 19 restrictions, we cannot take walk-ins at this time. Please call ahead or message us on Facebook to make an appointment. Thank you for your understanding.")
