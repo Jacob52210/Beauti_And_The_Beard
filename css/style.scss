@@ -48,7 +48,6 @@ body {
 
 		h1 {
 			font-family: 'Rouge Script', cursive;
-			font-weight: bold;
 			font-size: 23vw;
 			background-color: rgba(white, 0.6);
 			position: absolute;
@@ -150,11 +149,6 @@ body {
 			align-items: center;
 			margin-top: 2rem;
 
-			.fa-user-circle {
-				padding-right: 1rem;
-				color: white;
-			}
-
 			img {
 				width: 100px;
 				height: 100px;
@@ -165,7 +159,6 @@ body {
 			h1 {
 				position: relative;
 				font-size: 5rem;
-				font-weight: bold;
 				text-align: center;
 				color: white;
 				font-family: 'Rouge Script', cursive;
@@ -178,12 +171,36 @@ body {
 			padding: 2rem;
 			margin: 2rem;
 			width: 90vw;
+			max-width: 500px;
 			background-color: rgba(white, 0.6);
 			border-radius: 10px;
 
 			p {
 				font-size: 1rem;
 				font-weight: bold;
+			}
+
+			h3 {
+				text-align: center;
+				color: $primary-text;
+			}
+		}
+
+		.image-container {
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 2rem;
+
+			img {
+				width: 70vw;
+				height: auto;
+				margin: 1rem;
+				border: 3px solid $primary-text;
+				border-radius: 10px;
+				box-shadow: 5px 5px 10px $primary-text;
 			}
 		}
 
@@ -263,9 +280,10 @@ body {
 
 		.page-content-container {
 			.content-header-container {
-				width: 100vw;
 				flex-direction: row;
 				justify-content: space-evenly;
+				width: 60vw;
+				max-width: 300px;
 
 				h1 {
 					font-size: 5rem;
@@ -274,6 +292,33 @@ body {
 		}
 	}
 
-	@media screen and (min-width: 698px) {
+	@media screen and (min-width: 768px) {
+		.page-content-container {
+			.image-container {
+				grid-template-columns: repeat(2, 1fr);
+
+				img {
+					width: 40vw;
+					height: auto;
+				}
+			}
+		}
+
+		.footer-container {
+			padding-bottom: 2rem;
+		}
+	}
+
+	@media screen and (min-width: 1080px) {
+		.page-content-container {
+			.image-container {
+				grid-template-columns: repeat(4, 1fr);
+
+				img {
+					width: 20vw;
+					height: auto;
+				}
+			}
+		}
 	}
 }
